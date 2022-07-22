@@ -73,3 +73,8 @@ UI component for visualizing metrics.
       self.client.post("/publish-kafka-message", json={"message": str(uuid.uuid4())})
   ```
 - Access `http://localhost:8089/` and start swarmin'
+
+### Results
+
+![Prometheus on Localhost](prometheus-build.PNG)
+![Grafana on Localhost](grafana-build.PNG)
