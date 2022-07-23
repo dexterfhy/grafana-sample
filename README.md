@@ -25,8 +25,8 @@
     - Create two separate run configurations for producer and consumer application
     - Override `KAFKA_CONSUMER_ENABLED` environment variable in producer run configuration as `false` (defaults to `true`)
 - Test endpoint
-  - See `app/controllers/HomeController.java`
-  - Endpoint expects `{"message": <some-text>}`, publishes 
+  - See `app/controllers/HomeController.java` for entry point
+  - Endpoint expects `{"message": <some-text>}`, publishes `<some-text>` on the producer and consumer logs `<some-text>` to console
   ```
   curl --location --request POST 'http://localhost:9000/publish-kafka-message' \
     --header 'Content-Type: application/json' \
