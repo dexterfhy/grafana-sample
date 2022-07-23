@@ -9,8 +9,8 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-import static config.EnvVar.KAFKA_BOOTSTRAP_SERVERS;
-import static config.EnvVar.KAFKA_GROUP_ID;
+import static config.Env.KAFKA_BOOTSTRAP_SERVERS;
+import static config.Env.KAFKA_GROUP_ID;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class KafkaConfiguration {
